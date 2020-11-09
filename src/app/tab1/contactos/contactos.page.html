@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHreft="./tab1">
+      </ion-back-button>
+      Atras
+      </ion-buttons>
+    <ion-title>{{contacto.nombre}}
+
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+     
+      <ion-img [src]="contacto.imageURL">
+
+      </ion-img>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="ion-text-center">
+      
+      <h1>{{contacto.nombre}}</h1>
+      
+      <h2>{{contacto.oficio}}</h2>
+    </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="">
+        <ion-button href="">
+         <center>
+          Regresar
+        </center>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+</ion-grid>
+</ion-content>
